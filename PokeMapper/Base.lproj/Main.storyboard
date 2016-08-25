@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8dh-MN-eTS">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="FDM-iv-WUN">
+            <objects>
+                <navigationController id="8dh-MN-eTS" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VLw-m6-PHN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="sOx-Lr-rCV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cOo-yV-gXv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-899" y="416"/>
+        </scene>
+        <!--Poké Mapper-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qLT-pp-rth">
+                                <rect key="frame" x="0.0" y="492" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="LIE-Cc-uS3"/>
+                                    <barButtonItem systemItem="refresh" id="4Yc-Rt-fvH">
+                                        <connections>
+                                            <action selector="refreshPokemon:" destination="BYZ-38-t0r" id="WgG-Co-4eL"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="OHS-uY-6cg">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="492"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qj0-LH-vGK">
+                                <rect key="frame" x="247" y="443" width="107" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Show Location"/>
+                                <connections>
+                                    <action selector="centerMap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lKQ-Dm-BEF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OHS-uY-6cg" firstAttribute="trailing" secondItem="qLT-pp-rth" secondAttribute="trailing" id="49O-vc-3ea"/>
+                            <constraint firstItem="OHS-uY-6cg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="DMw-wf-TfJ"/>
+                            <constraint firstItem="qLT-pp-rth" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="JMn-Bw-B2S"/>
+                            <constraint firstItem="OHS-uY-6cg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hJJ-n8-BHe"/>
+                            <constraint firstAttribute="trailing" secondItem="OHS-uY-6cg" secondAttribute="trailing" id="hZR-fE-7bR"/>
+                            <constraint firstItem="qLT-pp-rth" firstAttribute="top" secondItem="Qj0-LH-vGK" secondAttribute="bottom" constant="19" id="ntp-vv-Pz4"/>
+                            <constraint firstItem="Qj0-LH-vGK" firstAttribute="centerX" secondItem="qLT-pp-rth" secondAttribute="centerX" constant="1" id="vCS-RH-iR7"/>
+                            <constraint firstItem="OHS-uY-6cg" firstAttribute="leading" secondItem="qLT-pp-rth" secondAttribute="leading" id="wCY-ht-lHg"/>
+                            <constraint firstItem="qLT-pp-rth" firstAttribute="top" secondItem="OHS-uY-6cg" secondAttribute="bottom" id="yXY-Vw-dfw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Poké Mapper" id="ym4-0z-ghY">
+                        <barButtonItem key="rightBarButtonItem" title="About" id="8zs-8G-7PD">
+                            <connections>
+                                <segue destination="Zue-xO-zcR" kind="show" id="t8M-ym-EMS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="centerButton" destination="Qj0-LH-vGK" id="e5X-qI-pia"/>
+                        <outlet property="pokeMapView" destination="OHS-uY-6cg" id="exW-bZ-7MC"/>
+                        <outlet property="refreshButton" destination="4Yc-Rt-fvH" id="bsB-qK-quV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="429"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="duD-ze-eLR">
+            <objects>
+                <viewController title="About" id="Zue-xO-zcR" customClass="PMAboutViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kiR-rs-oGq"/>
+                        <viewControllerLayoutGuide type="bottom" id="YgF-dZ-Tte"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="129-fb-HvQ">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Guillermo Morán" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mrO-6B-90l">
+                                <rect key="frame" x="225" y="221" width="151" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="p97-dz-REa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Poké Mapper" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wmP-fA-GvO">
+                                <rect key="frame" x="177" y="172" width="247" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="aDe-Tl-DtN"/>
+                                    <constraint firstAttribute="width" constant="247" id="tqj-qA-ZiD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="37"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CMK-5T-QdW">
+                                <rect key="frame" x="0.0" y="268" width="600" height="221"/>
+                                <color key="backgroundColor" red="0.95806716160220995" green="0.95806716160220995" blue="0.95806716160220995" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">PokéMapper - Realtime Pokemon tracker for Pokemon Go
+Copyright © 2016 Guillermo Moran
+http://gmoran.me
+
+PokéMapper uses real-time server updates to fetch the latest Pokemon available in your area! Simply open the app, tap the refresh button, and go out on an adventure!
+
+Note: Due to server load, refreshes are throttled to once every 30 seconds. Please be patient when reloading or moving the map. This is not a bug, it is a feature :)
+
+=====================
+
+Credits and Disclaimers:
+
+PokéMapper uses GiFHUD to display it’s loading interface.
+
+Copyright (C) 2014, Cem Olcay 
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation 
+the rights to use, copy, modify, merge, publish, distribute, sublicense, 
+and/or sell copies of the Software, and to permit persons to whom the 
+Software is furnished to do so, subject to the following conditions: 
+
+The above copyright notice and this permission notice shall be included in 
+all copies or substantial portions of the Software. 
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL 
+THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+DEALINGS IN THE SOFTWARE. 
+
+=====================
+
+PokeMapper is independently developed tool, developed for aiding in the "Pokemon Go" game. 
+This application is in no way affiliated with Nintendo, Niantic, or The Pokemon Company. Pokemon and it’s images/content used in this app belong to their rightful copyright owners. 
+
+=====================
+
+PokéMapper uses Pokevision.com as it’s backend and is in no way affiliated with or related to Pokevision.com. Pokevision are credited for the creation of the service. PokéMapper is only a GUI frontend for iOS devices. 
+
+Thank them on Twitter @pokevisiongo
+</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="pokemapper-logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="aEc-ZO-DZg">
+                                <rect key="frame" x="229" y="43" width="142" height="136"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="142" id="hIL-9A-6pz"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mrO-6B-90l" firstAttribute="top" secondItem="aEc-ZO-DZg" secondAttribute="bottom" constant="42" id="4m9-uL-TMZ"/>
+                            <constraint firstItem="aEc-ZO-DZg" firstAttribute="top" secondItem="kiR-rs-oGq" secondAttribute="bottom" constant="43" id="JrF-Ed-ZEK"/>
+                            <constraint firstItem="wmP-fA-GvO" firstAttribute="centerX" secondItem="129-fb-HvQ" secondAttribute="centerX" id="Uld-gc-HBy"/>
+                            <constraint firstItem="wmP-fA-GvO" firstAttribute="centerX" secondItem="mrO-6B-90l" secondAttribute="centerX" id="Y16-Rd-2zv"/>
+                            <constraint firstItem="mrO-6B-90l" firstAttribute="top" secondItem="wmP-fA-GvO" secondAttribute="bottom" constant="3" id="ZSN-Wq-9Hh"/>
+                            <constraint firstItem="aEc-ZO-DZg" firstAttribute="centerX" secondItem="wmP-fA-GvO" secondAttribute="centerX" id="dpW-49-aFC"/>
+                            <constraint firstItem="CMK-5T-QdW" firstAttribute="centerX" secondItem="mrO-6B-90l" secondAttribute="centerX" id="dwh-MV-QO0"/>
+                            <constraint firstItem="wmP-fA-GvO" firstAttribute="top" secondItem="kiR-rs-oGq" secondAttribute="bottom" constant="172" id="fEN-GE-And"/>
+                            <constraint firstItem="CMK-5T-QdW" firstAttribute="leading" secondItem="129-fb-HvQ" secondAttribute="leading" id="fUl-cf-qmX"/>
+                            <constraint firstItem="CMK-5T-QdW" firstAttribute="top" secondItem="mrO-6B-90l" secondAttribute="bottom" constant="26" id="kdR-Hw-o1z"/>
+                            <constraint firstItem="YgF-dZ-Tte" firstAttribute="top" secondItem="CMK-5T-QdW" secondAttribute="bottom" constant="47" id="qjx-P0-Aa3"/>
+                            <constraint firstItem="wmP-fA-GvO" firstAttribute="leading" secondItem="mrO-6B-90l" secondAttribute="leading" constant="-48" id="rPe-I4-W2I"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="textView" destination="CMK-5T-QdW" id="J5E-J2-Eoc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="npt-ud-VFd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1025" y="428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pokemapper-logo.png" width="1028" height="1028"/>
+    </resources>
+</document>

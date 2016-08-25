@@ -1,0 +1,373 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D8C4A231D432927003814F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8C4A221D432927003814F8 /* main.m */; };
+		2D8C4A261D432927003814F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8C4A251D432927003814F8 /* AppDelegate.m */; };
+		2D8C4A291D432927003814F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8C4A281D432927003814F8 /* ViewController.m */; };
+		2D8C4A2C1D432927003814F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D8C4A2A1D432927003814F8 /* Main.storyboard */; };
+		2D8C4A2E1D432927003814F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D8C4A2D1D432927003814F8 /* Assets.xcassets */; };
+		2D8C4A311D432927003814F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D8C4A2F1D432927003814F8 /* LaunchScreen.storyboard */; };
+		2D8C4A391D433536003814F8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8C4A381D433536003814F8 /* MapKit.framework */; };
+		2D8C4A3B1D435CE9003814F8 /* AddressAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8C4A3A1D435CE9003814F8 /* AddressAnnotation.m */; };
+		2D8C4A3E1D436562003814F8 /* pokedex.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D8C4A3D1D436562003814F8 /* pokedex.json */; };
+		2D8C4A401D4365AD003814F8 /* PMPokedex.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8C4A3F1D4365AD003814F8 /* PMPokedex.m */; };
+		2D8C4A581D443D7F003814F8 /* GiFHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8C4A4D1D443D7F003814F8 /* GiFHUD.m */; };
+		2D8C4A5B1D443D7F003814F8 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2D8C4A501D443D7F003814F8 /* LICENSE */; };
+		2D8C4A5D1D443D7F003814F8 /* pika.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2D8C4A521D443D7F003814F8 /* pika.gif */; };
+		2D8C4A611D458664003814F8 /* PMAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8C4A601D458664003814F8 /* PMAboutViewController.m */; };
+		2DC1E0401D4D4B300035D6C6 /* pokemapper-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DC1E03F1D4D4B300035D6C6 /* pokemapper-logo.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2D8C4A1E1D432927003814F8 /* PokeMapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeMapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D8C4A221D432927003814F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2D8C4A241D432927003814F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2D8C4A251D432927003814F8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2D8C4A271D432927003814F8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2D8C4A281D432927003814F8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2D8C4A2B1D432927003814F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2D8C4A2D1D432927003814F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D8C4A301D432927003814F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2D8C4A321D432927003814F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D8C4A381D433536003814F8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2D8C4A3A1D435CE9003814F8 /* AddressAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressAnnotation.m; sourceTree = "<group>"; };
+		2D8C4A3C1D435CF5003814F8 /* AddressAnnotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressAnnotation.h; sourceTree = "<group>"; };
+		2D8C4A3D1D436562003814F8 /* pokedex.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pokedex.json; sourceTree = "<group>"; };
+		2D8C4A3F1D4365AD003814F8 /* PMPokedex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMPokedex.m; sourceTree = "<group>"; };
+		2D8C4A411D4365B7003814F8 /* PMPokedex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PMPokedex.h; sourceTree = "<group>"; };
+		2D8C4A4C1D443D7F003814F8 /* GiFHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiFHUD.h; sourceTree = "<group>"; };
+		2D8C4A4D1D443D7F003814F8 /* GiFHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiFHUD.m; sourceTree = "<group>"; };
+		2D8C4A501D443D7F003814F8 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		2D8C4A521D443D7F003814F8 /* pika.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = pika.gif; sourceTree = "<group>"; };
+		2D8C4A5F1D458664003814F8 /* PMAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMAboutViewController.h; sourceTree = "<group>"; };
+		2D8C4A601D458664003814F8 /* PMAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMAboutViewController.m; sourceTree = "<group>"; };
+		2DC1E03F1D4D4B300035D6C6 /* pokemapper-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pokemapper-logo.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D8C4A1B1D432927003814F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D8C4A391D433536003814F8 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D8C4A151D432927003814F8 = {
+			isa = PBXGroup;
+			children = (
+				2D8C4A451D443D7F003814F8 /* GiFHUD */,
+				2D8C4A201D432927003814F8 /* PokeMapper */,
+				2D8C4A1F1D432927003814F8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2D8C4A1F1D432927003814F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D8C4A1E1D432927003814F8 /* PokeMapper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D8C4A201D432927003814F8 /* PokeMapper */ = {
+			isa = PBXGroup;
+			children = (
+				2DC1E03F1D4D4B300035D6C6 /* pokemapper-logo.png */,
+				2D8C4A3D1D436562003814F8 /* pokedex.json */,
+				2D8C4A411D4365B7003814F8 /* PMPokedex.h */,
+				2D8C4A3F1D4365AD003814F8 /* PMPokedex.m */,
+				2D8C4A3C1D435CF5003814F8 /* AddressAnnotation.h */,
+				2D8C4A3A1D435CE9003814F8 /* AddressAnnotation.m */,
+				2D8C4A241D432927003814F8 /* AppDelegate.h */,
+				2D8C4A251D432927003814F8 /* AppDelegate.m */,
+				2D8C4A271D432927003814F8 /* ViewController.h */,
+				2D8C4A281D432927003814F8 /* ViewController.m */,
+				2D8C4A2A1D432927003814F8 /* Main.storyboard */,
+				2D8C4A5F1D458664003814F8 /* PMAboutViewController.h */,
+				2D8C4A601D458664003814F8 /* PMAboutViewController.m */,
+				2D8C4A2D1D432927003814F8 /* Assets.xcassets */,
+				2D8C4A2F1D432927003814F8 /* LaunchScreen.storyboard */,
+				2D8C4A321D432927003814F8 /* Info.plist */,
+				2D8C4A211D432927003814F8 /* Supporting Files */,
+			);
+			path = PokeMapper;
+			sourceTree = "<group>";
+		};
+		2D8C4A211D432927003814F8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2D8C4A381D433536003814F8 /* MapKit.framework */,
+				2D8C4A221D432927003814F8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2D8C4A451D443D7F003814F8 /* GiFHUD */ = {
+			isa = PBXGroup;
+			children = (
+				2D8C4A4C1D443D7F003814F8 /* GiFHUD.h */,
+				2D8C4A4D1D443D7F003814F8 /* GiFHUD.m */,
+				2D8C4A501D443D7F003814F8 /* LICENSE */,
+				2D8C4A521D443D7F003814F8 /* pika.gif */,
+			);
+			path = GiFHUD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D8C4A1D1D432927003814F8 /* PokeMapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D8C4A351D432927003814F8 /* Build configuration list for PBXNativeTarget "PokeMapper" */;
+			buildPhases = (
+				2D8C4A1A1D432927003814F8 /* Sources */,
+				2D8C4A1B1D432927003814F8 /* Frameworks */,
+				2D8C4A1C1D432927003814F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PokeMapper;
+			productName = PokeMapper;
+			productReference = 2D8C4A1E1D432927003814F8 /* PokeMapper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D8C4A161D432927003814F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Guillermo Moran";
+				TargetAttributes = {
+					2D8C4A1D1D432927003814F8 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 25M9266LN7;
+					};
+				};
+			};
+			buildConfigurationList = 2D8C4A191D432927003814F8 /* Build configuration list for PBXProject "PokeMapper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2D8C4A151D432927003814F8;
+			productRefGroup = 2D8C4A1F1D432927003814F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D8C4A1D1D432927003814F8 /* PokeMapper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D8C4A1C1D432927003814F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D8C4A3E1D436562003814F8 /* pokedex.json in Resources */,
+				2D8C4A311D432927003814F8 /* LaunchScreen.storyboard in Resources */,
+				2D8C4A5B1D443D7F003814F8 /* LICENSE in Resources */,
+				2DC1E0401D4D4B300035D6C6 /* pokemapper-logo.png in Resources */,
+				2D8C4A5D1D443D7F003814F8 /* pika.gif in Resources */,
+				2D8C4A2E1D432927003814F8 /* Assets.xcassets in Resources */,
+				2D8C4A2C1D432927003814F8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D8C4A1A1D432927003814F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D8C4A291D432927003814F8 /* ViewController.m in Sources */,
+				2D8C4A401D4365AD003814F8 /* PMPokedex.m in Sources */,
+				2D8C4A261D432927003814F8 /* AppDelegate.m in Sources */,
+				2D8C4A231D432927003814F8 /* main.m in Sources */,
+				2D8C4A3B1D435CE9003814F8 /* AddressAnnotation.m in Sources */,
+				2D8C4A581D443D7F003814F8 /* GiFHUD.m in Sources */,
+				2D8C4A611D458664003814F8 /* PMAboutViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2D8C4A2A1D432927003814F8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D8C4A2B1D432927003814F8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2D8C4A2F1D432927003814F8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D8C4A301D432927003814F8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2D8C4A331D432927003814F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Guillermo Moran (8GS7SHPX9N)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Guillermo Moran (8GS7SHPX9N)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2D8C4A341D432927003814F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Guillermo Moran (8GS7SHPX9N)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Guillermo Moran (8GS7SHPX9N)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2D8C4A361D432927003814F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Guillermo Moran (8GS7SHPX9N)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Guillermo Moran (8GS7SHPX9N)";
+				INFOPLIST_FILE = PokeMapper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.gmoran.PokeMapper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		2D8C4A371D432927003814F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Guillermo Moran (8GS7SHPX9N)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Guillermo Moran (8GS7SHPX9N)";
+				INFOPLIST_FILE = PokeMapper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.gmoran.PokeMapper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8C4A191D432927003814F8 /* Build configuration list for PBXProject "PokeMapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D8C4A331D432927003814F8 /* Debug */,
+				2D8C4A341D432927003814F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8C4A351D432927003814F8 /* Build configuration list for PBXNativeTarget "PokeMapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D8C4A361D432927003814F8 /* Debug */,
+				2D8C4A371D432927003814F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2D8C4A161D432927003814F8 /* Project object */;
+}
